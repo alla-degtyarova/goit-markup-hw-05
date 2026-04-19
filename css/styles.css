@@ -535,7 +535,7 @@ a {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-
+  /* display: none; */
   transition:
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -579,7 +579,7 @@ a {
   height: 24px;
   border-radius: 50%;
   background-color: #e7e9fc;
-  border: 1px, solid, rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .modal-close-button:hover,
@@ -659,13 +659,12 @@ a {
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #8e8f99;
-
-  a {
-    line-height: 1.33333;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-    color: #4d5ae5;
-  }
+}
+.modal-check-label-link {
+  line-height: 1.33333;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
 }
 
 .check-marker {
@@ -687,7 +686,7 @@ a {
   background-color: #404bbf;
 }
 
-.modal-check-label {
+.modal-field-check {
   margin-bottom: 24px;
 }
 .modal-send-button {
